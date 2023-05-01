@@ -1,14 +1,38 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 40, 211);
+    height: auto;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
 .alunos{
     display: flex;
-    flex-direction: row;
-    background-color: aliceblue;
     flex-direction: column;
+    align-items: center;
 }
 .nome, .nota {
     font-size: 16px;
-    color: black;
+    color: #fff;
 }
 
 .btnDelete{
-    width: 4rem;
+    width: 7rem;
+    margin-top: .5rem;
+    border-radius: 7px;
+    border: none;
+    background-color: #2BC990;
+    padding: .5rem;
+    color: #fff;
+}
+
+.btnUpdate{
+    width: 7rem;
+    margin-top: .5rem;
+    border-radius: 7px;
+    border: none;
+    background-color: #2BC990;
+    padding: .5rem;
+    color: #fff;
 }

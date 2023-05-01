@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<Context>(x => x.UseSqlServer("Data Source=DEV125268N;Initial Catalog=Alunos;User ID=sa;Password=abcd.1234;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
+builder.Services.AddDbContext<Context>(x => x.UseSqlServer("Data Source=DEV125257N;Initial Catalog=Alunos;User ID=sa;Password=abcd.1234;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
 
 builder.Services.AddScoped<IAluno, RepositorioAluno>();
 

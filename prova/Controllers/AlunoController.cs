@@ -30,21 +30,21 @@ namespace prova.Controllers
             return Ok(apagado);
         }
 
-        [HttpGet("all")]
+        [HttpGet("aluno/get/all")]
         public async Task<ActionResult<List<Aluno>>> BuscaTodos()
         {
             List<Aluno> alunos = await _aluno.AlunosTodos();
             return Ok(alunos);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("aluno/get/{id}")]
         public async Task<ActionResult<Aluno>> BuscaPorId(int id)
         {
            Aluno usuario = await _aluno.AlunoId(id);
             return Ok(usuario);
         }
 
-        [HttpPatch("{id}")]
+        [HttpPatch("aluno/update/{id}")]
         public async Task<ActionResult<Aluno>> Atulizando([FromBody] Aluno aluno, int id)
         {
             aluno.Id = id;
