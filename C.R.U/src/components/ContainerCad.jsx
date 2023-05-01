@@ -24,8 +24,8 @@ export default function Cadastro(){
         .then(res => res.json())
         .then(data => {
           setAluno([
-            ...aluno,
-            data
+            data,
+            ...aluno
           ])
           setNomeA('');
           setNotaA('');

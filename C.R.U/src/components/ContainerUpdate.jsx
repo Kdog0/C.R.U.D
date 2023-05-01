@@ -25,7 +25,6 @@ export default function Update(props) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setStatusUp(false);
       })
       .catch((err) => console.log(err));
@@ -72,9 +71,14 @@ export default function Update(props) {
           />
         </label>
       </div>
+      <div>
       <button className="cadBtn" onClick={handleUpdate}>
         Atualizar
       </button>
+      <button className="cadBtnUpdate" onClick={() => setStatusUp(false)}>
+        Voltar
+      </button>
+      </div>
     </div>
   );
 }

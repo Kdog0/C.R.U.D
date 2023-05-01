@@ -7,8 +7,7 @@ import {AlunoContext} from './Contexts/Context'
 
 
 function App() {
-  const [aluno, setAluno] = useState([])
-  const {statusUp} = useContext(AlunoContext)
+  const {statusUp, aluno, setAluno} = useContext(AlunoContext)
 
   useEffect(() => {
     fetch(`https://localhost:7014/aluno/get/all`, {

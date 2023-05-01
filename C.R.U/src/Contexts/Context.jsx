@@ -24,6 +24,8 @@ export function AlunoProvider({ children }) {
         setNotaA,
         statusUp, 
         setStatusUp,
+        aluno,
+        setAluno,
         newAUpdate, 
         setNewAUpdate
       }}
