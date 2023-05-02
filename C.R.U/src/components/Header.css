@@ -1,0 +1,13 @@
+.headerContainer{
+    display: flex;
+    height: 4rem;
+    background-color: rgb(39, 21, 49);
+}
+
+.titleSearch{
+    color: #fff;
+}
+
+.inpSearch{
+    height: 1rem;
+}

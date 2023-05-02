@@ -24,8 +24,8 @@ export default function Cadastro(){
         .then(res => res.json())
         .then(data => {
           setAluno([
-            data,
-            ...aluno
+            ...aluno,
+            data
           ])
           setNomeA('');
           setNotaA('');
@@ -39,7 +39,7 @@ export default function Cadastro(){
             <label>
                 <span className='inpTitle'>Aluno: </span>
                 <input 
-                placeholder='Digite o nome do aluno...'
+                placeholder='O nome do aluno...'
                 className='inputTxt' 
                 type="text" 
                 value={nomeA} 
@@ -51,7 +51,7 @@ export default function Cadastro(){
             <label>
                 <span className='inpTitle'>Nota: </span>
             <input 
-            placeholder='Digite a nota do aluno...'
+            placeholder='A nota do aluno...'
             className='inputTxt' 
             type="text" 
             value={notaA} 

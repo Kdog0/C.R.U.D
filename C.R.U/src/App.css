@@ -2,13 +2,19 @@
   padding: 0;
   margin: 0;
   box-shadow: none;
+  font-family: monospace;
+  font-size: 15px;
 }
 
 .main{
-  background-color: rgba(10, 1, 113, 1);
+  background-color: rgb(39, 21, 49);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-bottom: -.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ConteinerCadastro{
@@ -18,7 +24,8 @@
   height: 10rem;
   justify-content: center;
   align-items: center;
-  margin-left: -.3rem;
+
+  
 }
 
 .ConteinerUpdate{
@@ -33,8 +40,9 @@
 
 .divNome{
   max-width: 15rem;
-  margin-bottom: .5rem;
   color: #fff;
+  margin-left: .5rem;
+  margin-bottom: 1em;
 }
 
 .divNota{
@@ -44,7 +52,6 @@
 }
 
 .inputTxt {
-  margin-left: .5rem;
   max-width: 10rem;
   padding: .5rem;
   background-color: rgba(10, 1, 113, 1);
@@ -84,3 +91,9 @@
   opacity: 0.7;
 }
 
+.listReverse{
+  margin-top: 1rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}

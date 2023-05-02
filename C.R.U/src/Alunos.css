@@ -1,12 +1,15 @@
 .cardContainer{
     display: flex;
     flex-direction: column;
-    background-color: rgb(54, 40, 211);
+    background-color: rgb(87, 84, 119);
     height: auto;
+    width: 20rem;
     margin-bottom: .5rem;
-    padding-bottom: .5rem;
-    padding-top: .5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
 }
+
 .alunos{
     display: flex;
     flex-direction: column;
